@@ -1,0 +1,15 @@
+<app-hex-converter>
+    <div class="container">
+    <h1>String to Hex Converter</h1>
+    <div>
+      <label for="inputString">Enter String:</label>
+      <input id="inputString" [(ngModel)]="inputString" placeholder="Enter a string" />
+    </div>
+    <button (click)="convertToHex()">Convert</button>
+    <div *ngIf="hexString">
+      <h2>Hexadecimal Representation:</h2>
+      <p>{{ hexString }}</p>
+    </div>
+  </div>
+</app-hex-converter>
+  
